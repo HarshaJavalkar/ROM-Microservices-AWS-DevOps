@@ -11,5 +11,7 @@
 #   - imagedefinitions.json
 startChains:
   myChain:
+     - NamingServer
 includes:
-   - Naming-server/builderspec.yaml
+   - Naming-server.yaml
+   
