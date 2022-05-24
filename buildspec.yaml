@@ -1,21 +1,15 @@
-version: 0.2
-phases:
-  install:
-    runtime-versions:
-      java: corretto11
-  build:
-    commands:
-    - cd Naming-server
-    - cd..
-    - cd jwtAuthentication
-    - cd..
-    - cd ComponentProcessingMicroservice
-    - cd..
-    - cd packageDeliveryModule
-    - cd..
-    - cd PaymentService
-    - cd..
-    - cd api-gateway
-artifacts:
-  files:
-  - imagedefinitions.json
+# version: 0.2
+# phases:
+#   install:
+#     runtime-versions:
+#       java: corretto11
+#   build:
+#     commands:
+#     - cd Naming-server
+# artifacts:
+#   files:
+#   - imagedefinitions.json
+startChains:
+  myChain:
+includes:
+   - Naming-server/builderspec.yaml
