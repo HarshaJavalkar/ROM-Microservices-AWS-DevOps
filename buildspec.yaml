@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  build:
+    commands:
+    - cd Naming-server
+    - cd api-gateway
+    - jwtAuthentication
+    - ComponentProcessingMicroservice
+    - packageDeliveryModule
+    - PaymentService
+artifacts:
+  files:
+  - imagedefinitions.json
