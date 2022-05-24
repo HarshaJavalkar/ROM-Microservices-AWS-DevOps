@@ -1,17 +1,11 @@
-# version: 0.2
-# phases:
-#   install:
-#     runtime-versions:
-#       java: corretto11
-#   build:
-#     commands:
-#     - cd Naming-server
-# artifacts:
-#   files:
-#   - imagedefinitions.json
-startChains:
-  myChain:
-     - NamingServer
-includes:
-   - Naming-server.yaml
-   
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  build:
+    commands:
+    - echo Naming-server/buildspec.yaml
+artifacts:
+  files:
+  - imagedefinitions.json
