@@ -6,11 +6,16 @@ phases:
   build:
     commands:
     - cd Naming-server
+    - cd..
+    - cd jwtAuthentication
+    - cd..
+    - cd ComponentProcessingMicroservice
+    - cd..
+    - cd packageDeliveryModule
+    - cd..
+    - cd PaymentService
+    - cd..
     - cd api-gateway
-    - jwtAuthentication
-    - ComponentProcessingMicroservice
-    - packageDeliveryModule
-    - PaymentService
 artifacts:
   files:
   - imagedefinitions.json
