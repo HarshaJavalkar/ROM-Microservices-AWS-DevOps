@@ -14,8 +14,7 @@ phases:
     commands:
     - echo Build started on `date`
     - echo $IMAGE_URI
-    - cd jwtAuthentication
-    - mvn clean package
+    - mvn clean package -Ddockerfile.skip
     - docker build --tag $IMAGE_URI .
   post_build:
     commands:
@@ -29,4 +28,3 @@ phases:
 artifacts:
   files:
   - imagedefinitions.json
-  

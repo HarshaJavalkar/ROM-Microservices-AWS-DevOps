@@ -14,7 +14,7 @@
 	<description>authentication service for ReturnOrderManagement</description>
 	<properties>
 		<java.version>11</java.version>
-	<!-- 	<spring-boot.build-image.imageName>io.bla/authorizationservice/bla</spring-boot.build-image.imageName>-->
+	 	<spring-boot.build-image.imageName>io.bla/authorizationservice/bla</spring-boot.build-image.imageName>
 
 	</properties>
 	<dependencies>
